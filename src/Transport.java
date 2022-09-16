@@ -1,4 +1,4 @@
-public abstract class Transport {
+public abstract class Transport implements TransportMethods {
     public String modelName;
     public int wheelsCount;
 
@@ -22,4 +22,18 @@ public abstract class Transport {
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
+    @Override
+    public void updateTyre() {
+    }
+
+    @Override
+    public void checkEngine() {
+    }
+
+    @Override
+    public void checkTrailer() {
+    }
+
+
+
 }
